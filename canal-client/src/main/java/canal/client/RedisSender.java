@@ -10,7 +10,7 @@ import com.rabbitmq.client.MessageProperties;
 
 import redis.clients.jedis.Jedis;
 
-public class redis {
+public class RedisSender {
 
 	/**
 	 * @param args
