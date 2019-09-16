@@ -28,7 +28,7 @@ public class MessageDto {
 	String type;//": "UPDATE"
 
 	public MessageDto(Entry entry, RowChange rowChage, RowData rowData) {
-		this.setType(EventType.DELETE.name());
+		this.setType(rowChage.getEventType().name());
 		this.setDatabase(entry.getHeader().getSchemaName());
 		this.setDdl(rowChage.getIsDdl());
 		this.setOld(values(rowData.getBeforeColumnsList()));
